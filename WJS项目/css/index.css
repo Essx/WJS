@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    color:#333;
+}
+a,a:hover{
+    color:#333;
+    text-decoration: none;
+}
+/*头部*/
+.wjs-header{
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+.wjs-header .row div{
+    border-right: 1px solid #ccc;
+}
+.wjs-header .row div:last-child{
+    border:none;
+}
+.wjs-header .row .btn{
+    padding: 3px 5px;
+    background-color: red;
+}
+
+/*引入字体*/
+@font-face {
+    font-family: wjs;
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="wjs-icon-"]{
+    font-family: wjs;
+}
+.wjs-icon-phone::before {
+    content: "\e908";
+}
+
+.wjs-icon-tel::before {
+    content: "\e909";
+}
+.wjs-icon-E903::before{
+    content: "\e903";
+}
+.wjs-icon-E906::before{
+    content: "\e906";
+}
+.wjs-icon-E905::before{
+    content: "\e905";
+}
+.wjs-icon-E907::before{
+    content: "\e907";
+}
+.wjs-icon-E901::before{
+    content: "\e901";
+}
+.wjs-icon-E900::before{
+    content: "\e900";
+}
+.wjs-icon-E904::before{
+    content: "\e904";
+}
+.wjs-icon-E902::before{
+    content: "\e902";
+}
+.wjs-icon-E906::before{
+    content: "\e906";
+}
+.wjs-icon-new01::before{
+    content: "\e90e";
+}
+.wjs-icon-new02::before{
+    content: "\e90f";
+}
+.wjs-icon-new03::before{
+    content: "\e910";
+}
+.wjs-icon-new04::before{
+    content: "\e911";
+}
+.wjs-icon-partner01::before{
+    content:"\e946";
+}
+.wjs-icon-partner02::before{
+    content: "\e92f";
+}
+.wjs-icon-partner03::before{
+    content: "\e92e";
+}
+.wjs-icon-partner04::before{
+    content: "\e92a";
+}
+.wjs-icon-partner05::before{
+    content: "\e929";
+}
+.wjs-icon-partner06::before{
+    content: "\e931";
+}
+.wjs-icon-partner07::before{
+    content: "\e92c";
+}
+.wjs-icon-partner08::before{
+    content: "\e92b";
+}
+.wjs-icon-partner09::before{
+    content: "\e92d";
+}
+.wjs-icon-logo::before {
+    content: "\e920";
+}
+
+.wjs-icon-text::before {
+    content: "\e93e";
+}
+
+/*导航栏*/
+.wjs-navbar{
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 15px 0;
+    margin-bottom: 0px;
+}
+.wjs-navbar .navbar-nav > li > a {
+    color: #999;
+    border-bottom: 3px solid transparent;
+    font-size: 14px;
+}
+.wjs-navbar .navbar-nav > li > a:hover,
+.wjs-navbar .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid red;
+}
+
+.wjs-icon-logo{
+    font-size: 50px;
+    color:red;
+    vertical-align: middle;
+}
+.wjs-icon-text{
+    font-size: 30px;
+    vertical-align: middle;
+}
+.navbar-toggle{
+    border-color: #ccc;
+}
+.navbar-toggle .icon-bar{
+    background-color: #333;
+    }
+
+/*轮播图*/
+.carousel .carousel-inner .pc-pic{
+    background-position: center center;
+    height: 410px;
+}
+.carousel .carousel-inner .m-pic{
+    width: 100%;
+}
+
+/*信息模块*/
+.wjs-info{
+    padding:30px 0;
+}
+.wjs-info .row>div{
+    margin:10px 0;
+}
+.wjs-info .media-left span{
+    font-size: 26px;
+}
+.wjs-info .row a:hover{
+    color:red;
+}
+@media screen and (min-width: 992px){
+    .wjs-info .container{
+        width: 910px;
+    }
+    .wjs-book .container{
+        width: 910px;
+    }
+}
+
+/*预约模块*/
+.wjs-book{
+    padding:30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+.wjs-book .row .pull-left span:nth-child(1){
+    font-size: 26px;
+}
+.wjs-book .row .pull-left a{
+    color:red;
+    border-bottom: 1px dashed red;
+}
+.wjs-book .row .pull-right span:nth-child(1){
+    font-size: 26px;
+}
+.wjs-book .row .pull-right a:hover{
+    color:red;
+}
+
+/*产品模块*/
+.wjs-product{
+    background-color: #eee;
+    padding:30px 0;
+    border-bottom: 1px solid #ccc;
+}
+.wjs-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.wjs-tabs > li {
+    float: left;
+}
+.wjs-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-bottom: 3px solid transparent;
+    font-size: 14px;
+}
+.wjs-tabs > li > a:hover {
+    color:#333;
+}
+.wjs-tabs > li.active > a,
+.wjs-tabs > li.active > a:hover,
+.wjs-tabs > li.active > a:focus {
+    color:#555;
+    cursor: default;
+    border: none;
+    border-bottom:3px solid red;
+    background-color: transparent;
+}
+.wjs-product .tab-content .row>div{
+    height: 170px;
+}
+.wjs-product .row .product-in{
+    height: 150px;
+    margin-top:20px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 1px 5px 0 #999;
+}
+.wjs-product .row .product-right{
+    float: right;
+    width: 108px;
+    height: 150px;
+    border-left: 1px dashed #ccc;
+    position: relative;
+}
+.wjs-product .row .product-right::before,
+.wjs-product .row .product-right::after{
+    content:'';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #eee;
+    left: -6px;
+    top: -6px;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #ccc;
+}
+.wjs-product .row .product-right::after{
+    top:auto;
+    bottom: -6px;
+    box-shadow: 0 -2px 1px 0 #ccc;
+}
+.wjs-product .row .product-left{
+    height: 150px;
+    overflow: hidden;
+}
+.wjs-product .product-left h4{
+    text-align: center;
+}
+.wjs-product .product-right p:nth-child(1){
+    margin-top: 20px;
+}
+.wjs-product .product-right p:nth-child(1) span{
+    font-size: 50px;
+    color:red;
+    font-weight: bold;
+}
+.wjs-product .product-right p:nth-child(2){
+    font-size: 14px;
+}
+.wjs-product .row .current{
+    background-color: red;
+    color: #fff;
+}
+.wjs-product .current .product-right p:nth-child(1) span{
+    color:#fff;
+}
+.wjs-product .row .tip{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+}
+.wjs-product .row .tip span{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.wjs-product .row .tip .bao{
+    color: green;
+    border-color: green;
+}
+.wjs-product .row .tip .qiang{
+    color: red;
+    border-color: red;
+}
+.wjs-product .row .product-left .progress{
+    height: 10px;
+}
+.wjs-product .row .product-in.current::before{
+    content:"\e915";
+    font-family: "wjs";
+    font-size: 40px;
+    position: absolute;
+    left: 0px;
+    top: -9px;
+}
+.wjs-product .nav-out{
+    overflow-x: auto;
+}
+
+/*新闻模块*/
+.wjs-news{
+    padding: 30px 0;
+}
+
+.wjs-news .col-md-2 h4{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+}
+.wjs-news .col-md-2 h4::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    bottom: -3px;
+    right: -6px;
+}
+.wjs-news .line{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 1px dashed #ccc;
+    left: 44px;
+    top: 0px;
+}
+.news-tab > li {
+    float: left;
+    margin-bottom: 60px;
+}
+.news-tab  li:last-child{
+    margin-bottom: 0px;
+}
+.news-tab > li > a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color:red;
+    font-size: 28px;
+    text-align: center;
+}
+[class^="wjs-icon-"]{
+    font-family: wjs;
+}
+.news-tab >li >a:hover{
+    background-color: red;
+    color:#fff;
+}
+.news-tab > li.active > a,
+.news-tab > li.active > a:hover,
+.news-tab > li.active > a:focus {
+    background-color: red;
+    color:#fff;
+}
+.wjs-news .tab-content ul{
+    padding-top: 30px;
+}
+.wjs-news .tab-content ul li{
+    list-style: none;
+    line-height: 45px;
+    font-size: 14px;
+}
+.wjs-news .tab-content ul li a:hover{
+    color:red;
+}
+@media screen and (max-width: 992px){
+    .wjs-news .news-tab >li{
+        width: 25%;
+        margin-bottom: 0px;
+    }
+    .wjs-news .news-tab a{
+        margin:0 auto;
+    }
+    .wjs-news .tab-content ul li{
+        height: 45px;
+        overflow: hidden;
+    }
+}
+
+/*合作伙伴*/
+.wjs-partner{
+    padding:40px 0;
+    background-color: #ccc;
+}
+.wjs-partner h4{
+    font-size: 30px;
+    text-align: center;
+}
+.wjs-partner ul{
+    list-style: none;
+    text-align: center;
+}
+.wjs-partner ul li{
+    margin:0 15px;
+    display: inline-block;
+    font-size: 60px;
+}
+.wjs-partner ul li a:hover{
+    color:red;
+}
